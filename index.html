@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Webamp Player</title>
+</head>
+<body>
+    <!-- Webamp will render and center itself within this container -->
+    <div id="app" style="height: 100vh;"></div>
+
+    <!-- Load the Webamp bundle directly via CDN -->
+    <script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+    <script>
+        const Webamp = window.Webamp;
+        const webamp = new Webamp({
+            initialTracks: [
+                {
+                    metaData: {
+                        artist: "DJ Mike Llama",
+                        title: "Llama Whippin' Intro"
+                    },
+                    // Link to audio files hosted in your GitHub repo or external URL
+                    url: "https://githubusercontent.com"
+                }
+            ],
+            // Optional: Link to a custom Winamp skin (.wsz file) in your repo
+            initialSkin: {
+                url: "./skins/my-skin.wsz"
+            }
+        });
+
+        // Render the player inside your div
+        webamp.renderWhenReady(document.getElementById('app'));
+    </script>
+</body>
+</html>
