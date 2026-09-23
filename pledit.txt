@@ -1,0 +1,8 @@
+[Text]
+Normal=#FFBBDD
+Current=#AA0055
+NormalBG=#FF80C0
+SelectedBG=#FF0080
+MbBG=#FF80C0
+MbFG=#AA0055
+Font=AvantGarde Bk BT
